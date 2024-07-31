@@ -19,9 +19,37 @@ position = Vector2(77, 173)
 collision_layer = 0
 
 [node name="BasicEnemy" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
-position = Vector2(-253, 19)
+position = Vector2(152, 359)
+collision_layer = 0
+
+[node name="BasicEnemy6" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(304, 357)
+collision_layer = 0
+
+[node name="BasicEnemy7" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(382, 327)
+collision_layer = 0
+
+[node name="BasicEnemy8" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(503, 241)
+collision_layer = 0
+
+[node name="BasicEnemy9" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(492, 79)
+collision_layer = 0
+
+[node name="BasicEnemy3" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(-53, 68)
+collision_layer = 0
+
+[node name="BasicEnemy4" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(-67, 263)
+collision_layer = 0
+
+[node name="BasicEnemy5" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
+position = Vector2(145, -41)
 collision_layer = 0
 
 [node name="BasicEnemy2" parent="." groups=["enemy"] instance=ExtResource("4_htgej")]
-position = Vector2(1876, -879)
+position = Vector2(359, -15)
 collision_layer = 0
