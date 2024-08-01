@@ -9,7 +9,7 @@ radius = 13.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_f17xi"]
 radius = 5.00016
 
-[node name="BasicEnemy" type="CharacterBody2D"]
+[node name="BasicEnemy" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_xfhl4")
 
 [node name="Area2D" type="Area2D" parent="."]
