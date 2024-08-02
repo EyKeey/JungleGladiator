@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cv7ek3yjt2llo"]
+[gd_scene load_steps=12 format=3 uid="uid://cv7ek3yjt2llo"]
 
 [ext_resource type="TileSet" uid="uid://b6o2nghokc8kl" path="res://resources/TileSet.tres" id="1_g321o"]
 [ext_resource type="PackedScene" uid="uid://8ssrnc4g1re7" path="res://scenes/manager/enemy_manager.tscn" id="1_ihj7t"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://dn7hobo3tgfma" path="res://scenes/manager/experience_manager.tscn" id="4_bn0m6"]
 [ext_resource type="PackedScene" uid="uid://cbjgkdw6884n3" path="res://scenes/UI/experience_bar.tscn" id="5_5oevh"]
 [ext_resource type="PackedScene" uid="uid://6e2wesh4b84n" path="res://scenes/UI/arena_time_ui.tscn" id="5_ftdml"]
+[ext_resource type="PackedScene" uid="uid://dnv3887csqudh" path="res://scenes/manager/upgrade_manager.tscn" id="6_bf5lk"]
+[ext_resource type="Resource" uid="uid://dtyaypq52mi" path="res://resources/upgrade/sword_rate.tres" id="7_a3ljc"]
 [ext_resource type="PackedScene" uid="uid://c0vhubbf11mrf" path="res://scenes/game_object/experience_vial/experience_vial.tscn" id="7_fll2x"]
 
 [node name="main" type="Node"]
@@ -24,6 +26,10 @@ arena_time_manager = NodePath("../ArenaTimeManager")
 [node name="ExperienceBar" parent="." node_paths=PackedStringArray("experience_manager") instance=ExtResource("5_5oevh")]
 experience_manager = NodePath("../ExperienceManager")
 
+[node name="UpgradeManager" parent="." node_paths=PackedStringArray("experience_manager") instance=ExtResource("6_bf5lk")]
+upgrade_pool = Array[Resource("res://resources/upgrade/ability_upgrade.gd")]([ExtResource("7_a3ljc")])
+experience_manager = NodePath("../ExperienceManager")
+
 [node name="GameCamera" parent="." instance=ExtResource("1_woooe")]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -37,3 +43,15 @@ collision_layer = 0
 
 [node name="ExperienceVial" parent="." instance=ExtResource("7_fll2x")]
 position = Vector2(235, 184)
+
+[node name="ExperienceVial2" parent="." instance=ExtResource("7_fll2x")]
+position = Vector2(386, 145)
+
+[node name="ExperienceVial3" parent="." instance=ExtResource("7_fll2x")]
+position = Vector2(341, 122)
+
+[node name="ExperienceVial4" parent="." instance=ExtResource("7_fll2x")]
+position = Vector2(286, 120)
+
+[node name="ExperienceVial5" parent="." instance=ExtResource("7_fll2x")]
+position = Vector2(244, 143)
